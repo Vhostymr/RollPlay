@@ -8,6 +8,7 @@ namespace RollPlay
     {
         protected void Application_Start()
         {
+            IocConfig.Initialize();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
