@@ -140,6 +140,8 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\RollController.cs" />
+    <Compile Include="Tests\ServiceTests\RollControllerTests.cs" />
+    <Compile Include="Tests\UtilityTests\DiceRollerTests.cs" />
     <Compile Include="Utilities\DiceRoller.cs" />
     <Compile Include="Utilities\IDiceRoller.cs" />
   </ItemGroup>
