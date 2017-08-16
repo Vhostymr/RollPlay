@@ -135,12 +135,12 @@
     <Compile Include="App_Start\IocConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Data\Background.cs" />
-    <Compile Include="Data\Buff.cs" />
-    <Compile Include="Data\Character.cs" />
-    <Compile Include="Data\CharacterClass.cs" />
-    <Compile Include="Data\CharacterRace.cs" />
-    <Compile Include="Data\Feature.cs" />
+    <Compile Include="Data\Entities\Background.cs" />
+    <Compile Include="Data\Entities\Buff.cs" />
+    <Compile Include="Data\Entities\Character.cs" />
+    <Compile Include="Data\Entities\CharacterClass.cs" />
+    <Compile Include="Data\Entities\CharacterRace.cs" />
+    <Compile Include="Data\Entities\Feature.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
