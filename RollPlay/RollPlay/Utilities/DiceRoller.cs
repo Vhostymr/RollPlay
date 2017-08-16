@@ -19,7 +19,7 @@ namespace RollPlay.Utilities
         /// <param name="max">The number of die faces.</param>
         /// <param name="min">The minimum possible value, default 1.</param>
         /// <returns>The dice value.</returns>
-        public int Roll(int max, int min = 1)
+        public int Roll(int max = 20, int min = 1)
         {
             if (max < 0) throw new ArgumentOutOfRangeException(nameof(max), "The max value cannot be lower than 0.");
             if (min < 0) throw new ArgumentOutOfRangeException(nameof(min), "The min value cannot be lower than 0.");
