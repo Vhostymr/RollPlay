@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 
-namespace RollPlay.Data
+namespace RollPlay.Data.Entities
 {
     public class CharacterClass
     {
@@ -15,7 +12,7 @@ namespace RollPlay.Data
     public class Class
     {
         public string Title { get; set; }
-        
+
         //Hit Dice
         //HP Per Level
         //HP at first level
@@ -42,7 +39,7 @@ namespace RollPlay.Data
 
 
         //Spell Casting
-        
+
     }
 
     public class CharacterSubclass
@@ -70,9 +67,9 @@ namespace RollPlay.Data
 
 
         //TODO: These super can't stay as dictionaries
-        public Dictionary<int,int> SpellSlotsPerLevel { get; set; } //treat cantrips as 0 level spells
+        public Dictionary<int, int> SpellSlotsPerLevel { get; set; } //treat cantrips as 0 level spells
 
-        public Dictionary<int,int> SpellCountPerLevel { get; set; } //nulllable, if it's not defined don't limit
+        public Dictionary<int, int> SpellCountPerLevel { get; set; } //nulllable, if it's not defined don't limit
 
         //TODO: Probably a better way to organize this
         public Dictionary<int, List<Spell>> SpellsKnownPerLevel { get; set; }
@@ -95,7 +92,7 @@ namespace RollPlay.Data
         public string Components { get; set; } //(Not just components, also needs material descriptions
 
         //Tie to turns?
-        public string Duration  { get; set; }
+        public string Duration { get; set; }
 
         //Attacks associated with the spell
         //TODO: Attacks that increment with level

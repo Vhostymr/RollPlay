@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
-namespace RollPlay.Data
+namespace RollPlay.Data.Entities
 {
     public enum StatType
     {
@@ -133,8 +130,8 @@ namespace RollPlay.Data
 
         public int Modifier(StatType Type)
         {
-            int baseValue=GetStat(Type);
-            int mod = (int) Math.Floor(((double)baseValue) / 2);
+            int baseValue = GetStat(Type);
+            int mod = (int)Math.Floor(((double)baseValue) / 2);
 
             //TODO: Add modifier buffs
 
@@ -166,12 +163,14 @@ namespace RollPlay.Data
             return 0;
         }
         #endregion
-        
+
         public virtual CharacterBackground Background { get; set; }
 
         #region Skills
 
-        public int Acrobatics { get
+        public int Acrobatics
+        {
+            get
             {
                 //TODO: Skill buffs
                 return Modifier(StatType.Dexterity);
@@ -202,7 +201,9 @@ namespace RollPlay.Data
         public bool ArcanaAdvantage { get; set; }
 
 
-        public int Athletics { get
+        public int Athletics
+        {
+            get
             {
                 //TODO: Skill buffs
                 return Modifier(StatType.Strength);
@@ -260,7 +261,7 @@ namespace RollPlay.Data
             }
         }
         public bool InvestigationAdvantage { get; set; }
-        
+
         public int Medicine
         {
             get
