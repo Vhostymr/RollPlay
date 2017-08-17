@@ -150,6 +150,7 @@
     <Compile Include="Services\RollController.cs" />
     <Compile Include="Tests\ServiceTests\RollControllerTests.cs" />
     <Compile Include="Tests\UtilityTests\DiceRollerTests.cs" />
+    <Compile Include="Tests\UtilityTests\ProficiencyTests.cs" />
     <Compile Include="Utilities\DiceRoller.cs" />
     <Compile Include="Utilities\IDiceRoller.cs" />
     <Compile Include="Utilities\IProficiencyCalculator.cs" />
