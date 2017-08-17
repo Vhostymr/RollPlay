@@ -141,6 +141,8 @@
     <Compile Include="Data\Entities\CharacterClass.cs" />
     <Compile Include="Data\Entities\CharacterRace.cs" />
     <Compile Include="Data\Entities\Feature.cs" />
+    <Compile Include="Data\Entities\Skills.cs" />
+    <Compile Include="Data\Entities\Stats.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -150,6 +152,7 @@
     <Compile Include="Tests\UtilityTests\DiceRollerTests.cs" />
     <Compile Include="Utilities\DiceRoller.cs" />
     <Compile Include="Utilities\IDiceRoller.cs" />
+    <Compile Include="Utilities\Proficiency.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
