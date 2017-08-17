@@ -152,7 +152,8 @@
     <Compile Include="Tests\UtilityTests\DiceRollerTests.cs" />
     <Compile Include="Utilities\DiceRoller.cs" />
     <Compile Include="Utilities\IDiceRoller.cs" />
-    <Compile Include="Utilities\Proficiency.cs" />
+    <Compile Include="Utilities\IProficiencyCalculator.cs" />
+    <Compile Include="Utilities\ProficiencyCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
