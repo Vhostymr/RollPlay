@@ -26,10 +26,12 @@ namespace RollPlay.Data.Entities
     public class Skills : Stats
     {
         private readonly int _characterLevel;
+        private readonly IProficiencyCalculator _proficiencyCalculator;
 
         public Skills(int characterLevel)
         {
             _characterLevel = characterLevel;
+            _proficiencyCalculator = new ProficiencyCalculator(); //todo see if autofac can inject here.
         }
 
         #region Skills
@@ -96,7 +98,7 @@ namespace RollPlay.Data.Entities
         /// <returns>The sum of the proficiency bonus and modifer.</returns>
         private int GetSkillModifer(StatType type)
         {
-            return Proficiency.GetProficiencyBonus(_characterLevel) + GetStatModifier(type);
+            return _proficiencyCalculator.GetProficiencyBonus(_characterLevel) + GetStatModifier(type);
         }
     }
 }
